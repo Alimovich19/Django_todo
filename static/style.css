@@ -1,0 +1,146 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Calibri;
+
+}
+
+
+
+body{
+    background: linear-gradient(#141e30, #243b55);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    background: rgba(0,0,0,.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+a{
+    padding: 0 0 0 10px;
+}
+
+#todoField {
+    width: 180px;
+    height: 37px;
+    border-radius: 30px;
+
+    padding-left: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Nozik chegaralar */
+    background: transparent; /* Oq foni olib tashlash */
+    color: white; /* Matn rangi oq */
+    outline: none;
+}
+
+#todoField::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Shaffof placeholder */
+}
+#add{
+    width: 60px;
+    height: 35px;
+    background-color: #0000FF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#todotasks{
+    width: 280px;
+    height: 290px;
+     border: 2px cyan;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.item{
+
+    width: 250px;
+    min-height: 50px; /* Oldingi height o‘rniga min-height qo‘shish */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Ichki bo‘shliq qo‘shish */
+    margin-bottom: 10px; /* Pastdan ajratish */
+    overflow: visible; /* Tugmalar to‘liq chiqishi uchun */
+
+}
+.edit, .delete{
+    height: 35px;
+    width:60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.edit{
+    background-color: green;
+}
+.delete{
+    background-color: red;
+}
+a {
+    text-decoration: none; /* Ostidan chizig‘ini olib tashlash */
+    outline: none; /* Ko‘k chiziq focus bo‘lganda chiqmasligi uchun */
+}
+.edit:hover {
+    background-color: darkgreen;
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.8);
+}
+
+.delete:hover {
+    background-color: darkred;
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+}
+
+.edit, .delete,#add {
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+p{
+    color: white;
+}
+i{
+    font-size: 16px;
+}
+#add:hover {
+    background-color: #0505ac;
+    box-shadow: 0 0 10px rgba(2, 2, 113, 0.8);
+}
+#change {
+            height: 35px;
+            width:60px;
+            background-color: green;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.8);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #change:hover {
+            background-color: darkgreen;
+            box-shadow:0 0 10px rgba(4, 172, 4, 0.8);
+        }
